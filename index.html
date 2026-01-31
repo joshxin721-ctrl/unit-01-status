@@ -3,41 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="60">
-    <title>UNIT-01 战术状态看板</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIT-01 MONITORING</title>
     <style>
-        body { background: #0f0019; color: #39FF14; font-family: 'Consolas', monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .container { border: 2px solid #39FF14; padding: 30px; background: rgba(20, 0, 40, 0.8); box-shadow: 0 0 20px rgba(57, 255, 20, 0.2); position: relative; width: 320px; }
-        h1 { border-bottom: 1px solid #39FF14; padding-bottom: 10px; font-size: 1.2em; text-align: center; color: #8a2be2; }
-        .metric { margin: 15px 0; display: flex; justify-content: space-between; }
-        .label { color: #888; }
-        .value { font-weight: bold; }
-        .status-dot { width: 10px; height: 10px; background: #39FF14; border-radius: 50%; display: inline-block; margin-right: 5px; box-shadow: 0 0 5px #39FF14; }
-        .footer { margin-top: 20px; font-size: 0.7em; color: #555; text-align: center; }
+        body { background: #0f0019; color: #39FF14; font-family: monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .box { border: 2px solid #39FF14; padding: 20px; background: rgba(0,0,0,0.8); width: 280px; text-align: center; }
+        .glitch { color: #8a2be2; font-weight: bold; border-bottom: 1px solid #39FF14; margin-bottom: 15px; }
+        .time { font-size: 0.7em; color: #555; margin-top: 15px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>MAGI SYSTEM MONITOR</h1>
-        <div class="metric">
-            <span class="label">CORE STATUS:</span>
-            <span class="value"><span class="status-dot"></span>ONLINE</span>
-        </div>
-        <div class="metric">
-            <span class="label">C: DRIVE FREE:</span>
-            <span class="value">19G</span>
-        </div>
-        <div class="metric">
-            <span class="label">MEMORY:</span>
-            <span class="value">956/1802MB</span>
-        </div>
-        <div class="metric">
-            <span class="label">UPTIME:</span>
-            <span class="value">up 3 hours, 19 minutes</span>
-        </div>
-        <div class="footer">
-            LAST UPDATE (UTC): 2026-01-31 02:05:55<br>
-            AUTO-REFRESH EVERY 60S
-        </div>
+    <div class="box">
+        <div class="glitch">MAGI STATUS BOARD</div>
+        <p>CORE: 🟢 ONLINE</p>
+        <p>DISK: 19G FREE</p>
+        <p>MEM: 965MB</p>
+        <div class="time">LAST SYNC (UTC):<br>02:44:31</div>
     </div>
 </body>
 </html>
