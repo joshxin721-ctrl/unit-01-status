@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="60">
-    <title>UNIT-01 MONITORING</title>
+    <meta charset="UTF-8"><meta http-equiv="refresh" content="60">
+    <title>UNIT-01 DB BACKED MONITOR</title>
     <style>
-        body { background: #0f0019; color: #39FF14; font-family: monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .box { border: 2px solid #39FF14; padding: 30px; background: rgba(0,0,0,0.8); box-shadow: 0 0 20px rgba(57,255,20,0.5); width: 300px; text-align: center; }
-        .status { color: #8a2be2; font-size: 1.5em; border-bottom: 2px solid #39FF14; margin-bottom: 20px; padding-bottom: 10px; }
-        .time { font-size: 0.8em; color: #555; margin-top: 20px; }
+        body { background: #0f0019; color: #39FF14; font-family: monospace; padding: 20px; }
+        .box { border: 2px solid #39FF14; padding: 20px; background: rgba(0,0,0,0.8); width: 320px; margin: auto; }
+        .history { font-size: 0.8em; color: #8a2be2; margin-top: 20px; border-top: 1px solid #333; }
+        ul { list-style: none; padding: 0; }
     </style>
 </head>
 <body>
     <div class="box">
-        <div class="status">UNIT-01: ONLINE</div>
-        <p>DISK C: 17G FREE</p>
-        <p>MEM: 984MB USED</p>
-        <div class="time">LAST UPDATE (UTC):<br>06:27:52</div>
+        <h2 style="color:#8a2be2">UNIT-01 CORE</h2>
+        <p>DISK C: 17G | MEM: 991MB</p>
+        <div class="history">
+            <p>RECENT LOGS (DATABASE):</p>
+            <ul><li>14:29:58 | 17G | 991MB</li></ul>
+        </div>
+        <div style="font-size:0.7em; margin-top:10px">LAST SYNC: 2026-01-31 14:29:58</div>
     </div>
 </body>
 </html>
